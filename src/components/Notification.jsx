@@ -39,9 +39,10 @@ const Notification = ({ className, title }) => {
           <div className="body-2 text-n-13">1m ago</div>
         </div>
 
-        <div className="...">
+        {/* Remove or comment out the message text below */}
+        {/* <div className="text-n-4">
           Hey NumenAI, explain this concept
-        </div>
+        </div> */}
       </div>
     </div>
   );
