@@ -59,7 +59,7 @@ const Header = () => {
                     : "lg:text-n-1/50"
                 } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
               >
-                {item.title}
+                {item.title === "Sign in" ? "Contact us" : item.title}
               </a>
             ))}
           </div>
@@ -74,7 +74,7 @@ const Header = () => {
           New account
         </a>
         <Button className="hidden lg:flex" href="#login">
-          Sign in
+          Contact us
         </Button>
 
         <Button
