@@ -55,12 +55,12 @@ const Hero = () => {
 
   const handleProgressClick = (e) => {
     if (!videoRef.current) return;
-    
+
     const progressBar = e.currentTarget;
     const rect = progressBar.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const percentage = (x / rect.width) * 100;
-    
+
     videoRef.current.currentTime = (percentage / 100) * videoRef.current.duration;
   };
 
@@ -98,7 +98,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Experience the future of mathematics education with NumenAI. Our AI-powered tutor combines Augmented Reality and gesture-based learning to make complex mathematical concepts easy to understand and visualize.
           </p>
-          <Button href="/pricing" white>
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSd0KtDcxd-ru95dTfvglsgjMlfe-IpEu9RDcCer6MAi1FrJWQ/viewform?usp=preview" white>
             Get started
           </Button>
         </div>
@@ -106,7 +106,7 @@ const Hero = () => {
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-              
+
               <div className="relative group">
                 <div className="aspect-[16/9] rounded-b-[0.9rem] md:aspect-[16/9] lg:aspect-[16/9] relative">
                   <video
@@ -131,13 +131,13 @@ const Hero = () => {
                       >
                         {isMuted ? (
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-n-1">
-                            <path d="M11 5L6 9H2V15H6L11 19V5Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M23 9L17 15M17 9L23 15" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M11 5L6 9H2V15H6L11 19V5Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M23 9L17 15M17 9L23 15" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         ) : (
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-n-1">
-                            <path d="M11 5L6 9H2V15H6L11 19V5Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M19.07 4.93C20.9447 6.80528 21.9979 9.34836 21.9979 12C21.9979 14.6516 20.9447 17.1947 19.07 19.07M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 12C17.0039 13.3308 16.4774 14.6024 15.54 15.54" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M11 5L6 9H2V15H6L11 19V5Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M19.07 4.93C20.9447 6.80528 21.9979 9.34836 21.9979 12C21.9979 14.6516 20.9447 17.1947 19.07 19.07M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 12C17.0039 13.3308 16.4774 14.6024 15.54 15.54" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         )}
                       </button>
@@ -162,23 +162,23 @@ const Hero = () => {
                     >
                       {isPlaying ? (
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-n-1">
-                          <rect x="6" y="4" width="4" height="16" fill="currentColor"/>
-                          <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
+                          <rect x="6" y="4" width="4" height="16" fill="currentColor" />
+                          <rect x="14" y="4" width="4" height="16" fill="currentColor" />
                         </svg>
                       ) : (
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-n-1">
-                          <path d="M5 3l14 9-14 9V3z" fill="currentColor"/>
+                          <path d="M5 3l14 9-14 9V3z" fill="currentColor" />
                         </svg>
                       )}
                     </button>
                   </div>
 
                   {/* Progress bar */}
-                  <div 
+                  <div
                     className="absolute bottom-0 left-0 right-0 h-2 bg-n-8/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 cursor-pointer z-[60]"
                     onClick={handleProgressClick}
                   >
-                    <div 
+                    <div
                       className="h-full bg-color-1 transition-all duration-200"
                       style={{ width: `${progress}%` }}
                     />
