@@ -27,7 +27,7 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <Button>Try it now</Button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSet6U4qZXxAbDgBUh95HQkbciYa8g-LyIJMhjxBq0Ub4NMidQ/viewform?usp=header" target="_blank"><Button>Try it now</Button></a>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">

@@ -17,9 +17,8 @@ const Roadmap = () => (
 
           return (
             <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
-                item.colorful ? "bg-conic-gradient" : "bg-n-6"
-              }`}
+              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${item.colorful ? "bg-conic-gradient" : "bg-n-6"
+                }`}
               key={item.id}
             >
               <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
@@ -69,7 +68,7 @@ const Roadmap = () => (
       </div>
 
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
+        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSet6U4qZXxAbDgBUh95HQkbciYa8g-LyIJMhjxBq0Ub4NMidQ/viewform?usp=header">TRY IT NOW</Button>
       </div>
     </div>
   </Section>
